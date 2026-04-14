@@ -105,7 +105,7 @@ conda activate foundationpose
 
 # Install Eigen3 3.4.0 under conda environment
 conda install conda-forge::eigen=3.4.0
-export CMAKE_PREFIX_PATH="$CMAKE_PREFIX_PATH:/eigen/path/under/conda"
+export CMAKE_PREFIX_PATH="$CONDA_PREFIX:/share/eigen3/cmake"
 
 # install dependencies
 python -m pip install -r requirements.txt

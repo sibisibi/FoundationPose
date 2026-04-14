@@ -33,6 +33,7 @@ setup(
         ],extra_compile_args={'gcc': c_flags, 'nvcc': nvcc_flags}),
     ],
     include_dirs=[
+        os.path.join(os.environ.get('CONDA_PREFIX', ''), 'include', 'eigen3'),
         "/usr/local/include/eigen3",
         "/usr/include/eigen3",
     ],
